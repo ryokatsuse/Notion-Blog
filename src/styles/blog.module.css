@@ -48,6 +48,10 @@
   align-items: center;
   justify-content: flex-start;
 }
+
+.titleContainer a {
+  cursor: pointer;
+}
 .draftBadge {
   border-radius: 16px;
   background-color: black;

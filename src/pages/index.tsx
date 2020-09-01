@@ -5,7 +5,6 @@ export default () => (
   <>
     <Header titlePre="Home" />
     <div className={sharedStyles.layout}>
-      <h1>&#x1f4fd;キネマトグラフ</h1>
       <img src="/eltopo.jpeg" alt="" />
       <div className="explanation">
         <p>鑑賞した映画、アニメ、ドラマなどをまとめていく</p>

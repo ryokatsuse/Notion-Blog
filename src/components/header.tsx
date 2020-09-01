@@ -5,7 +5,6 @@ import { useRouter } from 'next/router'
 import styles from '../styles/header.module.css'
 
 const navItems: { label: string; page?: string; link?: string }[] = [
-  { label: 'トップ', page: '/' },
   { label: 'ブログ', page: '/blog' },
 ]
 
@@ -29,6 +28,9 @@ export default ({ titlePre = '' }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={ogImageUrl} />
       </Head>
+      <a href="/">
+        <h1>&#x1f4fd;キネマトグラフ</h1>
+      </a>
       <ul>
         {navItems.map(({ label, page, link }) => (
           <li key={label}>
