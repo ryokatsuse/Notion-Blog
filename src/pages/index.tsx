@@ -8,7 +8,7 @@ export default () => (
       <h1>&#x1f4fd;キネマトグラフ</h1>
       <img src="/eltopo.jpeg" alt="" />
       <div className="explanation">
-        <p>鑑賞した映画をまとめていく</p>
+        <p>鑑賞した映画、アニメ、ドラマなどをまとめていく</p>
       </div>
     </div>
   </>
