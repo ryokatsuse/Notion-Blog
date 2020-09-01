@@ -22,6 +22,10 @@
   border-radius: 5px;
 }
 
+.description {
+  text-align: center;
+}
+
 .escapePreview {
   display: flex;
   flex-direction: column;
