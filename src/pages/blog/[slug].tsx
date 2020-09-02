@@ -152,13 +152,9 @@ const RenderPost = ({ post, redirect, preview }) => {
       )}
       <div className={blogStyles.post}>
         <h1>{post.Page || ''}</h1>
-        {post.Authors.length > 0 && (
-          <div className="authors">{post.Authors.join(' ')}</div>
-        )}
         {post.Date && (
           <div className="posted">{getDateStr(post.Date)}に投稿した。</div>
         )}
-
         <hr />
 
         {(!post.content || post.content.length === 0) && (

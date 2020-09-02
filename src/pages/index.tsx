@@ -77,18 +77,10 @@ export default ({ posts = [], preview }) => {
                   </div>
                 </Link>
               </h3>
-              {post.Authors.length > 0 && (
-                <div className="authors">By: {post.Authors.join(' ')}</div>
-              )}
               {post.Date && (
-                <div className="posted">Posted: {getDateStr(post.Date)}</div>
-              )}
-              {post.Thumbnail && (
-                <Link href="/blog/[slug]" as={getBlogLink(post.Slug)}>
-                  <a>
-                    <img src={post.Thumbnail} />
-                  </a>
-                </Link>
+                <div className="posted">
+                  {getDateStr(post.Date)}に投稿した。
+                </div>
               )}
               <p>{post.Description}</p>
               <p>
