@@ -83,10 +83,10 @@ export default ({ posts = [], preview }) => {
               {post.Date && (
                 <div className="posted">Posted: {getDateStr(post.Date)}</div>
               )}
-              {post.Thumb && (
+              {post.Thumbnail && (
                 <Link href="/blog/[slug]" as={getBlogLink(post.Slug)}>
                   <a>
-                    <img src={post.Thumb} />
+                    <img src={post.Thumbnail} />
                   </a>
                 </Link>
               )}
