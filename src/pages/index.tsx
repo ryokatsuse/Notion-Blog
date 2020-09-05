@@ -43,6 +43,7 @@ export async function getStaticProps({ preview }) {
 }
 
 export default ({ posts = [], preview }) => {
+  posts.sort((a, b) => b.Date - a.Date)
   return (
     <>
       <Header />
@@ -83,13 +84,13 @@ export default ({ posts = [], preview }) => {
                 </div>
               )}
               <p>{post.Description}</p>
-              <p>
+              {/* <p>
                 {(!post.preview || post.preview.length === 0) &&
                   'No preview available'}
                 {(post.preview || []).map((block, idx) =>
                   textBlock(block, true, `${post.Slug}${idx}`)
                 )}
-              </p>
+              </p> */}
             </div>
           )
         })}
